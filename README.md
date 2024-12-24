@@ -1,27 +1,54 @@
 # ApexVanguard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+**ApexVanguard** is a web application designed for the **Club de chasse Maska** in Quebec, managing hunting competitions across three exciting categories: **underwater fishing**, **big game hunting**, and **bird hunting**.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Competition Management**
+  - Organize competitions across three categories.
+  - Automated registration closure 24 hours before competition.
 
-## Code scaffolding
+- **User Roles**
+  - **Administrator**: Manage competitions, users, and system configurations.
+  - **Member**: Register for competitions, view rankings, and manage profiles.
+  - **Jury**: Evaluate and score participants based on pre-defined criteria.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Score and Ranking System**
+  - Scores calculated using species weight and difficulty factors.
+  - Automated ranking updates for transparency and fairness.
 
-## Build
+- **Species Database**
+  - Detailed characteristics and difficulty ratings for each species.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Business Rules
 
-## Running unit tests
+1. Only one competition can occur per week.
+2. Registration closes automatically 24 hours before a competition.
+3. Participants must have a valid hunting license to compete.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technical Stack
 
-## Running end-to-end tests
+### Backend
+- **Framework**: Spring Boot
+- **Security**: Spring Security
+- **Database**: Liquibase for version control
+- **Mapping and Utilities**: MapStruct & Lombok
+- **Testing**: JUnit for unit testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Frontend
+- **Framework**: Angular 17
+- **Styling**: CSS
+- **State Management**: RxJS
+- **UI Library**: Angular Material
 
-## Further help
+## Getting Started
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Prerequisites
+- **Backend**:
+  - Java 17+
+  - Maven 3+
+  - PostgreSQL 13+
+- **Frontend**:
+  - Node.js 18+
+  - Angular CLI 17+
+
